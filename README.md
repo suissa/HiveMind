@@ -29,9 +29,9 @@ O HiveMind Forge foi projetado para se manter ativo independentemente das falhas
 
 Cada milissegundo importa. O HiveMind Forge usa técnicas de otimização paralela, indexação de memória e inferência distribuída para processar informações com extrema rapidez.
 
-✅ Pipeline de execução assíncrono e paralelizado
-✅ Armazenamento e recuperação otimizados com TimeSeries DB utilizando o TimeScale
-✅ Pronto para inferência acelerada com CUDA, ONNX e TPU
+- ✅ Pipeline de execução assíncrono e paralelizado
+- ✅ Armazenamento e recuperação otimizados com TimeSeries DB utilizando o TimeScale
+- ✅ Pronto para inferência acelerada com CUDA, ONNX e TPU
 
 ## 🏗️ Tipos de Memória implementadas
 
