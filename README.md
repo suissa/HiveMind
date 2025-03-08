@@ -1,5 +1,7 @@
 ## 🚀 HiveMind Forge: A Revolução na Coordenação de Agentes de IA
 
+![HiveMindForge Logo](https://i.imgur.com/c3zvnpM.png)
+
 O HiveMind Forge veio para redefinir o padrão dos agentes de Inteligência Artificial, elevando sua escalabilidade, resiliência e velocidade de processamento a um novo patamar. Inspirado na inteligência coletiva dos enxames (Swarm Intelligence), este framework cria uma rede distribuída e altamente orquestrada de agentes que nunca caem e operam com eficiência máxima, independentemente da carga ou complexidade das operações.
 
 ## 🏗️ O Que Torna o HiveMind Forge Único?
