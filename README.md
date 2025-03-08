@@ -11,18 +11,19 @@ O HiveMind Forge veio para redefinir o padrão dos agentes de Inteligência Arti
 
 Diferente dos sistemas tradicionais de agentes, o HiveMind Forge não tem um único ponto de falha. Ele permite a orquestração de milhares de agentes de IA distribuídos globalmente, garantindo que o sistema cresça de forma linear e eficiente.
 
-✅ Auto-escalabilidade dinâmica com balanceamento adaptativo
-✅ Distribuição Inteligente de Tarefas entre agentes
-✅ Suporte nativo a Kubernetes, NATS e Kafka para comunicação distribuída
+- ✅ Auto-escalabilidade dinâmica com balanceamento adaptativo
+- ✅ Distribuição Inteligente de Tarefas entre agentes
+- ✅ Suporte nativo a Kubernetes, NATS e Kafka para comunicação distribuída
 
 ### 🔄 Resiliência: Quando Você Nunca Cai
 
 O HiveMind Forge foi projetado para se manter ativo independentemente das falhas. Se um agente cai, outro assume sua função em milissegundos.
 
-✅ Failover automático com redistribuição instantânea de tarefas
-✅ Mecanismos de fallback e reprocessamento inteligente
-✅ Armazenamento de eventos para consistência eventual
-✅ CircuitBreaker
+- ✅ Failover automático com redistribuição instantânea de tarefas
+- ✅ Mecanismos de fallback e reprocessamento inteligente
+- ✅ Armazenamento de eventos para consistência eventual
+- ✅ CircuitBreaker Decorator
+- ✅ Retry Decorator
 
 ### ⚡ Processamento Ultrarrápido
 
