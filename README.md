@@ -1,163 +1,159 @@
 ![HiveMind Forge](https://i.imgur.com/niwPiiL.png)
 
-## 🚀 HiveMind Forge: A Revolução na Coordenação de Agentes de IA
+## 🚀 HiveMind Forge: The Revolution in AI Agent Coordination
 
+HiveMind Forge has come to redefine the standard of Artificial Intelligence agents, elevating their scalability, resilience, and processing speed to a new level. Inspired by Swarm Intelligence, this framework creates a distributed and highly orchestrated network of agents that never fail and operate with maximum efficiency, regardless of load or operation complexity.
 
-O HiveMind Forge veio para redefinir o padrão dos agentes de Inteligência Artificial, elevando sua escalabilidade, resiliência e velocidade de processamento a um novo patamar. Inspirado na inteligência coletiva dos enxames (Swarm Intelligence), este framework cria uma rede distribuída e altamente orquestrada de agentes que nunca caem e operam com eficiência máxima, independentemente da carga ou complexidade das operações.
+## 🏗️ What Makes HiveMind Forge Unique?
 
-## 🏗️ O Que Torna o HiveMind Forge Único?
+### 🟢 High Scalability: Limitless Expansion
 
-### 🟢 Alta Escalabilidade: Expansão Sem Limites
+Unlike traditional agent systems, HiveMind Forge has no single point of failure. It enables the orchestration of thousands of globally distributed AI agents, ensuring that the system grows linearly and efficiently.
 
-Diferente dos sistemas tradicionais de agentes, o HiveMind Forge não tem um único ponto de falha. Ele permite a orquestração de milhares de agentes de IA distribuídos globalmente, garantindo que o sistema cresça de forma linear e eficiente.
+- ✅ Dynamic auto-scaling with adaptive balancing
+- ✅ Intelligent Task Distribution among agents
+- ✅ Native support for Kubernetes, NATS, and Kafka for distributed communication
 
-- ✅ Auto-escalabilidade dinâmica com balanceamento adaptativo
-- ✅ Distribuição Inteligente de Tarefas entre agentes
-- ✅ Suporte nativo a Kubernetes, NATS e Kafka para comunicação distribuída
+### 🔄 Resilience: When You Never Fall
 
-### 🔄 Resiliência: Quando Você Nunca Cai
+HiveMind Forge is designed to stay active regardless of failures. If an agent falls, another takes over its function in milliseconds.
 
-O HiveMind Forge foi projetado para se manter ativo independentemente das falhas. Se um agente cai, outro assume sua função em milissegundos.
-
-- ✅ Failover automático com redistribuição instantânea de tarefas
-- ✅ Mecanismos de fallback e reprocessamento inteligente
-- ✅ Armazenamento de eventos para consistência eventual
+- ✅ Automatic failover with instant task redistribution
+- ✅ Intelligent fallback and reprocessing mechanisms
+- ✅ Event storage for eventual consistency
 - ✅ CircuitBreaker Decorator
 - ✅ Retry Decorator
 
-### ⚡ Processamento Ultrarrápido
+### ⚡ Ultra-fast Processing
 
-Cada milissegundo importa. O HiveMind Forge usa técnicas de otimização paralela, indexação de memória e inferência distribuída para processar informações com extrema rapidez.
+Every millisecond matters. HiveMind Forge uses parallel optimization techniques, memory indexing, and distributed inference to process information with extreme speed.
 
-- ✅ Pipeline de execução assíncrono e paralelizado
-- ✅ Armazenamento e recuperação otimizados com TimeSeries DB utilizando o TimeScale
-- ✅ Pronto para inferência acelerada com CUDA, ONNX e TPU
+- ✅ Asynchronous and parallelized execution pipeline
+- ✅ Optimized storage and retrieval with TimeSeries DB using TimeScale
+- ✅ Ready for accelerated inference with CUDA, ONNX, and TPU
 
-## 🏗️ Tipos de Memória implementadas
+## 🏗️ Implemented Memory Types
 
-Antes de escolher o banco de dados, precisamos entender quais tipos de memória os agentes podem precisar:
+Before choosing the database, we need to understand what types of memory agents might need:
 
-Memória de Curto Prazo (Contextual) - Redis
+Short-Term Memory (Contextual) - Redis
 
-- Dados temporários usados durante a execução de tarefas
-- Contexto da conversa/interação
-- Melhor armazenado em bancos NoSQL rápidos (ex: Redis, KeyDB, DragonflyDB)
+- Temporary data used during task execution
+- Conversation/interaction context
+- Best stored in fast NoSQL databases
 
-Memória de Longo Prazo (Persistente) - MongoDB
+Long-Term Memory (Persistent) - MongoDB
 
-- Registros de interações passadas
-- Histórico de aprendizado e evolução do agente
-- Pode ser armazenado em bancos relacionais ou documentais (ex: PostgreSQL, MongoDB, TimescaleDB)
+- Records of past interactions
+- Agent learning and evolution history
+- Can be stored in relational or document databases
 
-Memória Semântica (Recuperação de Conhecimento) - Weaviate
+Semantic Memory (Knowledge Retrieval) - Weaviate
 
-- Armazena embeddings para busca semântica
-- Permite recuperação eficiente de informações relevantes
-- Melhor armazenado em bancos vetoriais (ex: Weaviate, Pinecone, ChromaDB, FAISS, Milvus)
+- Stores embeddings for semantic search
+- Enables efficient information retrieval
+- Best stored in vector databases
 
-Memória de Eventos - TimeScaleDB
+Event Memory - TimeScaleDB
 
-- Captura eventos de execução dos agentes (event sourcing)
-- Permite reprocessamento e análise de comportamento
-- Melhor armazenado em bancos de eventos/Time-Series (ex: TimescaleDB, Druid, InfluxDB, ClickHouse)
+- Captures agent execution events (event sourcing)
+- Enables reprocessing and behavior analysis
+- Best stored in event/Time-Series databases
 
+## 🛠️ Available Tools
 
-## 🛠️ Ferramentas Disponíveis
+HiveMind Forge offers a robust set of tools for different needs:
 
-O HiveMind Forge oferece um conjunto robusto de ferramentas para diferentes necessidades:
-
-### 📡 APIs e Clientes
-- **API Client**: Implementação base para clientes de API
-  - Interface padronizada para comunicação com APIs externas
-  - Sistema de decoradores para middleware e interceptadores
-  - Exemplos práticos de implementação
-  - Arquivos: `api_client.go`, `api_decorators.go`, `api_interface.go`, `api_client_example.go`
+### 📡 APIs and Clients
+- **API Client**: Base implementation for API clients
+  - Standardized interface for external API communication
+  - Decorator system for middleware and interceptors
+  - Practical implementation examples
+  - Files: `api_client.go`, `api_decorators.go`, `api_interface.go`, `api_client_example.go`
 
 ### 🌐 Web Scraping
-- **Colly Scraper**: Ferramenta de scraping eficiente usando Colly
-  - Interface unificada para scraping web
-  - Suporte a múltiplos seletores e padrões
-- **Selenium Scraper**: Scraping avançado para páginas dinâmicas
-  - Automação de navegadores com Selenium
-  - Suporte a JavaScript e conteúdo dinâmico
-  - Arquivos: `colly_scraper.go`, `selenium_scraper.go`, `scraper_interface.go`
+- **Colly Scraper**: Efficient scraping tool using Colly
+  - Unified interface for web scraping
+  - Support for multiple selectors and patterns
+- **Selenium Scraper**: Advanced scraping for dynamic pages
+  - Browser automation with Selenium
+  - Support for JavaScript and dynamic content
+  - Files: `colly_scraper.go`, `selenium_scraper.go`, `scraper_interface.go`
 
-### 📝 Processamento de Formulários
-- **Form Filler**: Sistema inteligente para preenchimento automático
-  - Interface robusta para manipulação de formulários
-  - Validação e processamento automático de campos
-  - Exemplos de implementação e casos de uso
-  - Arquivos: `form_filler.go`, `form_filler_interface.go`, `form_filler_example.go`
+### 📝 Form Processing
+- **Form Filler**: Intelligent system for automatic filling
+  - Robust interface for form manipulation
+  - Automatic field validation and processing
+  - Implementation examples and use cases
+  - Files: `form_filler.go`, `form_filler_interface.go`, `form_filler_example.go`
 
-### 🔍 Busca e Indexação
-- **Meilisearch**: Cliente otimizado para busca full-text
-  - Integração completa com Meilisearch
-  - Exemplos de configuração e uso
-- **Weaviate**: Cliente para banco de dados vetorial
-  - Busca semântica e vetorial
-  - Exemplos de implementação
-  - Arquivos: `meilisearch.go`, `meilisearch_example.go`, `weaviate_client.go`, `weaviate_example.go`, `search_interface.go`
+### 🔍 Search and Indexing
+- **Meilisearch**: Optimized client for full-text search
+  - Complete integration with Meilisearch
+  - Configuration and usage examples
+- **Weaviate**: Client for vector database
+  - Semantic and vector search
+  - Implementation examples
+  - Files: `meilisearch.go`, `meilisearch_example.go`, `weaviate_client.go`, `weaviate_example.go`, `search_interface.go`
 
-### 📊 Análise e Predição
-- **Trend Predictor**: Sistema avançado de predição
-  - Análise preditiva e detecção de tendências
-  - Interface para modelos de predição
-  - Exemplos de uso e implementação
-  - Arquivos: `trend_predictor.go`, `trend_predictor_interface.go`, `trend_predictor_example.go`
+### 📊 Analysis and Prediction
+- **Trend Predictor**: Advanced prediction system
+  - Predictive analysis and trend detection
+  - Interface for prediction models
+  - Usage and implementation examples
+  - Files: `trend_predictor.go`, `trend_predictor_interface.go`, `trend_predictor_example.go`
 
-### 🔒 Segurança
-- **Fraud Detector**: Sistema de detecção de fraudes
-  - Detecção em tempo real de atividades suspeitas
-  - Interface para implementação de regras
-  - Exemplos de casos de uso
-- **Nmap Scanner**: Scanner de segurança integrado
-  - Interface para varreduras de segurança
-  - Integração com Nmap
-  - Arquivos: `fraud_detector.go`, `fraud_detector_interface.go`, `fraud_detector_example.go`, `nmap_scanner.go`, `nmap_scanner_example.go`, `security_scanner_interface.go`
+### 🔒 Security
+- **Fraud Detector**: Fraud detection system
+  - Real-time detection of suspicious activities
+  - Interface for rule implementation
+  - Use case examples
+- **Nmap Scanner**: Integrated security scanner
+  - Interface for security scans
+  - Nmap integration
+  - Files: `fraud_detector.go`, `fraud_detector_interface.go`, `fraud_detector_example.go`, `nmap_scanner.go`, `nmap_scanner_example.go`, `security_scanner_interface.go`
 
-### 📄 Processamento de Documentos
-- **PDF Processor**: Processamento de documentos PDF
-  - Extração e análise de conteúdo
-  - Interface para manipulação de PDFs
-- **Spreadsheet Processor**: Manipulação de planilhas
-  - Processamento eficiente de dados tabulares
-  - Interface para operações em planilhas
-  - Arquivos: `pdf_processor.go`, `pdf_interface.go`, `spreadsheet_processor.go`, `spreadsheet_interface.go`
+### 📄 Document Processing
+- **PDF Processor**: PDF document processing
+  - Content extraction and analysis
+  - Interface for PDF manipulation
+- **Spreadsheet Processor**: Spreadsheet manipulation
+  - Efficient tabular data processing
+  - Interface for spreadsheet operations
+  - Files: `pdf_processor.go`, `pdf_interface.go`, `spreadsheet_processor.go`, `spreadsheet_interface.go`
 
-### 🤖 Execução de Código
-- **Python Executor**: Executor seguro de código Python
-  - Ambiente isolado para scripts Python
-  - Interface para execução e monitoramento
-- **V8 Executor**: Ambiente JavaScript com V8
-  - Execução segura de JavaScript
-  - Interface para integração com V8
-  - Arquivos: `python_executor.go`, `python_executor_interface.go`, `python_executor_example.go`, `v8_executor.go`, `v8_executor_example.go`, `js_executor_interface.go`
+### 🤖 Code Execution
+- **Python Executor**: Safe Python code executor
+  - Isolated environment for Python scripts
+  - Interface for execution and monitoring
+- **V8 Executor**: JavaScript environment with V8
+  - Safe JavaScript execution
+  - Interface for V8 integration
+  - Files: `python_executor.go`, `python_executor_interface.go`, `python_executor_example.go`, `v8_executor.go`, `v8_executor_example.go`, `js_executor_interface.go`
 
-### 🔤 Processamento de Linguagem Natural
-- **Spacy NER**: Reconhecimento de entidades nomeadas
-  - Integração com spaCy para NLP
-  - Interface para processamento de texto
-  - Exemplos de uso
-  - Arquivos: `spacy_ner.go`, `spacy_ner_example.go`, `nlp_interface.go`
+### 🔤 Natural Language Processing
+- **Spacy NER**: Named Entity Recognition
+  - spaCy integration for NLP
+  - Interface for text processing
+  - Usage examples
+  - Files: `spacy_ner.go`, `spacy_ner_example.go`, `nlp_interface.go`
 
-### 🧪 Utilitários
-- **Exa**: Ferramenta de análise de dados
-  - Utilitários para manipulação de dados
-  - Arquivos: `exa.go`
-- **Tavly**: Sistema de análise e visualização
-  - Ferramentas para visualização de dados
-  - Arquivos: `tavly.go`
+### 🧪 Utilities
+- **Exa**: Data analysis tool
+  - Utilities for data manipulation
+  - Files: `exa.go`
+- **Tavly**: Analysis and visualization system
+  - Tools for data visualization
+  - Files: `tavly.go`
 
-Cada ferramenta foi projetada para integrar-se perfeitamente ao ecossistema do HiveMind Forge, mantendo os mesmos padrões de resiliência, escalabilidade e performance que caracterizam nossa plataforma. Todas as ferramentas incluem interfaces bem definidas, exemplos de implementação e documentação detalhada para facilitar a integração e extensão.
+Each tool has been designed to integrate seamlessly into the HiveMind Forge ecosystem, maintaining the same standards of resilience, scalability, and performance that characterize our platform. All tools include well-defined interfaces, implementation examples, and detailed documentation to facilitate integration and extension.
 
+### 🔥 Planned Improvements for Future Versions
 
+🔹 HiveMind Cognitive Orchestrator - A contextual decision agent that adjusts execution strategies in real-time.
+🔹 Self-Organizing Neural Networks - AI that learns to redistribute load automatically.
+🔹 Adaptive Agent Prioritization - Algorithm that dynamically prioritizes tasks based on computational cost.
+🔹 Live Debugging & Observability - Advanced tools for monitoring agents and decision pipelines.
+🔹 Zero-Trust Security Layer - Decentralized authentication and end-to-end encryption for agent communication.
 
-### 🔥 Melhorias Planejadas para Próximas Versões
-
-🔹 HiveMind Cognitive Orchestrator - Um agente de decisão contextual que ajusta estratégias de execução em tempo real.
-🔹 Redes Neurais Auto-Organizáveis - IA que aprende a redistribuir carga automaticamente.
-🔹 Adaptive Agent Prioritization - Algoritmo que prioriza tarefas dinamicamente com base no custo computacional.
-🔹 Live Debugging & Observability - Ferramentas avançadas de monitoramento de agentes e pipelines de decisão.
-🔹 Camada de Segurança Zero-Trust - Autenticação descentralizada e criptografia ponta a ponta para comunicação entre agentes.
-
-O HiveMind Forge não é apenas um framework. É um novo paradigma para sistemas de IA distribuídos, onde falha não é uma opção e lentidão não é tolerada. Se você está pronto para construir agentes autônomos hiperinteligentes, que trabalham juntos em uma rede indestrutível, este é o futuro. Bem-vindo à nova era da IA distribuída. 🚀
+HiveMind Forge is not just a framework. It's a new paradigm for distributed AI systems, where failure is not an option and slowness is not tolerated. If you're ready to build hyperintelligent autonomous agents that work together in an indestructible network, this is the future. Welcome to the new era of distributed AI. 🚀
