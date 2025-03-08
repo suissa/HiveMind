@@ -1,0 +1,6 @@
+tasks:
+  - name: "generate_feedback"
+    agent: "Player Feedback Agent"
+    description: "Generates personalized performance analysis and recommendations for individual players based on their session data."
+    expected_output: "A JSON object providing highlights of strengths, areas for improvement, and next-step suggestions tailored to the player's learning goals."
+    context: "Called whenever a training session ends or a user requests a detailed review of their progress, helping them understand how to advance and reinforce concepts."

@@ -1,0 +1,39 @@
+research_task:
+  description: "Pesquisar e analisar o mercado"
+  expected_output: "Relatório detalhado sobre tendências e oportunidades de mercado"
+  context: []
+  tools:
+    - "web_search"
+    - "data_analysis"
+
+project_understanding_task:
+  description: "Compreender os objetivos e requisitos do projeto"
+  expected_output: "Documento com análise detalhada dos requisitos e objetivos"
+  context: ["research_task"]
+  tools:
+    - "project_analysis"
+    - "requirements_mapping"
+
+marketing_strategy_task:
+  description: "Desenvolver estratégia de marketing"
+  expected_output: "Estratégia detalhada com táticas, canais e KPIs"
+  context: ["research_task", "project_understanding_task"]
+  tools:
+    - "strategy_planning"
+    - "market_analysis"
+
+campaign_idea_task:
+  description: "Criar ideia de campanha"
+  expected_output: "Conceito de campanha com público-alvo e canais definidos"
+  context: ["marketing_strategy_task"]
+  tools:
+    - "creative_ideation"
+    - "audience_analysis"
+
+copy_creation_task:
+  description: "Criar texto publicitário"
+  expected_output: "Texto persuasivo alinhado com a estratégia e campanha"
+  context: ["marketing_strategy_task", "campaign_idea_task"]
+  tools:
+    - "copywriting"
+    - "content_optimization" 

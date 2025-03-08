@@ -1,0 +1,18 @@
+tasks:
+  - name: "suggest_training"
+    agent: "Account Agent"
+    description: "Generates recommendations for new training programs based on aggregated account data and usage patterns."
+    expected_output: "A JSON structure containing a list of suggested training ideas, including brief rationales and relevant metrics."
+    context: "Invoked when an admin or manager requests strategic advice on what new trainings should be created or prioritized."
+
+  - name: "generate_insights"
+    agent: "Account Agent"
+    description: "Analyzes high-level performance and engagement data across all company trainings, identifying trends and potential areas of improvement."
+    expected_output: "A structured JSON with key insights (e.g., average completion rates, difficulty hotspots, success stories) to guide organizational decisions."
+    context: "Called by administrators seeking a global overview of learning performance and actionable recommendations for the account."
+
+  - name: "chat"
+    agent: "Account Agent"
+    description: "Facilitates a chat-based interaction focused on discussing overall account metrics, answering questions about training performance, and exploring aggregated data."
+    expected_output: "A conversation flow (messages) that directly addresses admin queries about stats, usage patterns, or potential improvements at the account level."
+    context: "Typically used for real-time Q&A with the account's staff side, providing on-demand analytics or clarifications regarding the training ecosystem."

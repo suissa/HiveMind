@@ -1,0 +1,18 @@
+{
+  "ID": "agent1",
+  "Name": "Assistente de Pesquisa",
+  "Description": "Agente especializado em pesquisa e análise de dados",
+  "MaxRounds": 3,
+  "CurrentRound": 1,
+  "TrainingHistory": [
+    {
+      "StartTime": "2025-03-08T01:59:07.449503849-03:00",
+      "EndTime": "2025-03-08T01:59:09.449440903-03:00",
+      "Accuracy": 0.8,
+      "Loss": 0.19999999999999996,
+      "RoundsExecuted": 1,
+      "Errors": null
+    }
+  ],
+  "State": {}
+}

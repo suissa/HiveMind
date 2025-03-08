@@ -1,0 +1,18 @@
+{
+  "ID": "agent3",
+  "Name": "Gerente de Projeto",
+  "Description": "Agente especializado em gerenciamento de projetos",
+  "MaxRounds": 4,
+  "CurrentRound": 1,
+  "TrainingHistory": [
+    {
+      "StartTime": "2025-03-08T01:59:07.449480433-03:00",
+      "EndTime": "2025-03-08T01:59:09.449455104-03:00",
+      "Accuracy": 0.8,
+      "Loss": 0.19999999999999996,
+      "RoundsExecuted": 1,
+      "Errors": null
+    }
+  ],
+  "State": {}
+}

@@ -1,0 +1,45 @@
+tasks:
+  - id: "market-analysis"
+    name: "Análise de Mercado"
+    description: "Analisar o mercado atual e identificar oportunidades"
+    assigned_to: "lead-analyst"
+    dependencies: []
+    priority: 1
+    status: "pending"
+    deadline: "2024-12-31T23:59:59Z"
+
+  - id: "strategy-development"
+    name: "Desenvolvimento de Estratégia"
+    description: "Desenvolver estratégia de marketing baseada na análise"
+    assigned_to: "strategy-chief"
+    dependencies: ["market-analysis"]
+    priority: 2
+    status: "pending"
+    deadline: "2024-12-31T23:59:59Z"
+
+  - id: "content-creation"
+    name: "Criação de Conteúdo"
+    description: "Criar conteúdo alinhado com a estratégia"
+    assigned_to: "content-creator"
+    dependencies: ["strategy-development"]
+    priority: 3
+    status: "pending"
+    deadline: "2024-12-31T23:59:59Z"
+
+  - id: "campaign-execution"
+    name: "Execução da Campanha"
+    description: "Executar a campanha de marketing"
+    assigned_to: "strategy-chief"
+    dependencies: ["content-creation"]
+    priority: 4
+    status: "pending"
+    deadline: "2024-12-31T23:59:59Z"
+
+  - id: "performance-analysis"
+    name: "Análise de Performance"
+    description: "Analisar resultados da campanha"
+    assigned_to: "lead-analyst"
+    dependencies: ["campaign-execution"]
+    priority: 5
+    status: "pending"
+    deadline: "2024-12-31T23:59:59Z" 

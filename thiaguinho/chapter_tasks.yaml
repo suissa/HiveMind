@@ -1,0 +1,24 @@
+tasks:
+  - name: "create_chapter"
+    agent: "Chapter Agent"
+    description: "Generates the structure and metadata for a new chapter, ensuring it aligns with the training's overall narrative and objectives."
+    expected_output: "A JSON object representing the newly created chapter, including a title, objectives, short introduction, and relevant metadata."
+    context: "Invoked when a new chapter must be introduced in the training flow, typically after the Training Agent has defined the broader storyline or when the admin requests a new segment."
+
+  - name: "create_challenges"
+    agent: "Chapter Agent"
+    description: "Elaborates multiple quiz-based challenges for the chapter, defining question sets, correct/incorrect answers, and basic feedback messages."
+    expected_output: "A JSON structure containing each challenge, the question text, answer options, and correct answers mapped to the chapter."
+    context: "Used after the chapter is created, enabling a cohesive set of challenges within the newly defined learning context."
+
+  - name: "create_single_round"
+    agent: "Chapter Agent"
+    description: "Builds a single round or step of challenges within the chapter, controlling difficulty and scope to maintain consistent progression."
+    expected_output: "A minimal JSON object with the round’s questions, their correct answers, and any immediate feedback or scoring rules."
+    context: "Triggered in scenarios where chapters are segmented into multiple rounds, ensuring incremental difficulty and structured pacing."
+
+  - name: "generate_insights"
+    agent: "Chapter Agent"
+    description: "Analyzes aggregated data on player interactions within a specific chapter, identifying success rates, bottlenecks, and improvement areas."
+    expected_output: "A JSON report summarizing key metrics (e.g., average completion time, most-missed questions), plus recommendations for updating or refining the chapter content."
+    context: "Usually called by administrators or the platform backend to refine chapters over time, ensuring better alignment with learner needs and improved engagement."

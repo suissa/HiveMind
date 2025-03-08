@@ -1,0 +1,84 @@
+tools:
+  research:
+    - id: "market-research"
+      name: "Pesquisa de Mercado"
+      description: "Ferramenta para análise de mercado e concorrência"
+      capabilities:
+        - "Análise de tendências"
+        - "Monitoramento de concorrentes"
+        - "Pesquisa de público-alvo"
+      requirements:
+        - "API key para acesso a dados de mercado"
+
+    - id: "data-analytics"
+      name: "Análise de Dados"
+      description: "Ferramenta para análise de dados e métricas"
+      capabilities:
+        - "Análise estatística"
+        - "Visualização de dados"
+        - "Geração de relatórios"
+      requirements:
+        - "Conexão com fontes de dados"
+
+  planning:
+    - id: "strategy-planner"
+      name: "Planejador de Estratégia"
+      description: "Ferramenta para desenvolvimento de estratégias"
+      capabilities:
+        - "Definição de objetivos"
+        - "Planejamento de ações"
+        - "Análise de riscos"
+      requirements:
+        - "Acesso a dados históricos"
+
+    - id: "budget-manager"
+      name: "Gerenciador de Orçamento"
+      description: "Ferramenta para gestão de orçamento"
+      capabilities:
+        - "Planejamento financeiro"
+        - "Controle de gastos"
+        - "Previsão de ROI"
+      requirements:
+        - "Integração com sistema financeiro"
+
+  creative:
+    - id: "content-generator"
+      name: "Gerador de Conteúdo"
+      description: "Ferramenta para criação de conteúdo"
+      capabilities:
+        - "Geração de textos"
+        - "Edição de imagens"
+        - "Criação de vídeos"
+      requirements:
+        - "API key para serviços de IA"
+
+    - id: "social-media-manager"
+      name: "Gerenciador de Redes Sociais"
+      description: "Ferramenta para gestão de redes sociais"
+      capabilities:
+        - "Agendamento de posts"
+        - "Monitoramento de engajamento"
+        - "Análise de performance"
+      requirements:
+        - "Tokens de acesso às redes sociais"
+
+  analysis:
+    - id: "performance-tracker"
+      name: "Rastreador de Performance"
+      description: "Ferramenta para análise de performance"
+      capabilities:
+        - "Monitoramento de KPIs"
+        - "Análise de conversão"
+        - "Geração de insights"
+      requirements:
+        - "Integração com ferramentas de analytics"
+
+    - id: "sentiment-analyzer"
+      name: "Analisador de Sentimento"
+      description: "Ferramenta para análise de sentimento"
+      capabilities:
+        - "Análise de comentários"
+        - "Monitoramento de menções"
+        - "Avaliação de feedback"
+      requirements:
+        - "API key para processamento de linguagem natural" 

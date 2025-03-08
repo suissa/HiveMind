@@ -1,0 +1,79 @@
+web_search:
+  name: "Pesquisa Web"
+  description: "Realiza pesquisas na web para encontrar informações relevantes"
+  api_key: "${SERPER_API_KEY}"
+  max_results: 10
+  timeout: 30
+
+data_analysis:
+  name: "Análise de Dados"
+  description: "Analisa dados para identificar padrões e insights"
+  libraries:
+    - "pandas"
+    - "numpy"
+    - "scikit-learn"
+  max_memory: "2GB"
+
+project_analysis:
+  name: "Análise de Projeto"
+  description: "Analisa requisitos e objetivos do projeto"
+  templates:
+    - "project_requirements"
+    - "project_goals"
+    - "project_constraints"
+
+requirements_mapping:
+  name: "Mapeamento de Requisitos"
+  description: "Mapeia requisitos do projeto em tarefas e objetivos"
+  templates:
+    - "requirements_matrix"
+    - "task_breakdown"
+    - "dependency_map"
+
+strategy_planning:
+  name: "Planejamento Estratégico"
+  description: "Desenvolve estratégias de marketing baseadas em dados"
+  templates:
+    - "strategy_canvas"
+    - "swot_analysis"
+    - "marketing_mix"
+
+market_analysis:
+  name: "Análise de Mercado"
+  description: "Analisa tendências e oportunidades de mercado"
+  data_sources:
+    - "market_reports"
+    - "competitor_analysis"
+    - "trend_analysis"
+
+creative_ideation:
+  name: "Ideação Criativa"
+  description: "Gera ideias criativas para campanhas"
+  techniques:
+    - "brainstorming"
+    - "mind_mapping"
+    - "lateral_thinking"
+
+audience_analysis:
+  name: "Análise de Público"
+  description: "Analisa características e comportamentos do público-alvo"
+  data_sources:
+    - "demographics"
+    - "psychographics"
+    - "behavior_patterns"
+
+copywriting:
+  name: "Redação Publicitária"
+  description: "Cria textos persuasivos e envolventes"
+  templates:
+    - "headline_formulas"
+    - "body_copy_structures"
+    - "call_to_action"
+
+content_optimization:
+  name: "Otimização de Conteúdo"
+  description: "Otimiza conteúdo para melhor performance"
+  techniques:
+    - "seo_optimization"
+    - "readability_analysis"
+    - "engagement_metrics" 

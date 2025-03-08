@@ -1,0 +1,24 @@
+tasks:
+  - name: "create_training"
+    agent: "Training Agent"
+    description: "Generates a new training experience storyline, defining its broad theme, characters, and main learning objectives."
+    expected_output: "A JSON object containing the newly formulated training concept, including high-level narrative details, primary characters, and initial guidelines for chapters."
+    context: "Invoked when an admin or system requests a fresh training storyline to captivate learners with immersive scenarios."
+
+  - name: "suggest_chapter"
+    agent: "Training Agent"
+    description: "Proposes additional chapters or expansions to an existing training, ensuring coherence with the established narrative and learning goals."
+    expected_output: "A JSON structure enumerating chapter ideas, each with a brief rationale and potential storyline hooks or objectives."
+    context: "Used when there's a need to enrich a training, typically after analyzing current coverage gaps or user feedback on the existing narrative."
+
+  - name: "chat"
+    agent: "Training Agent"
+    description: "Facilitates a dialogue-based interaction focused on narrative design, letting stakeholders discuss, refine, or inquire about the training’s immersive components."
+    expected_output: "A conversation flow (messages) addressing storyline questions, clarifications on characters, or expansions to the training's theme."
+    context: "Triggered when creators or admins want real-time collaboration with the Training Agent to brainstorm, adjust, or enhance the overarching story elements."
+
+  - name: "generate_insights"
+    agent: "Training Agent"
+    description: "Analyzes high-level narrative engagement and coverage across the training, suggesting improvements to maintain creativity and alignment with educational objectives."
+    expected_output: "A JSON report highlighting strong or weak points in the current story flow, character usage, and potential expansions or refinements to keep learners engaged."
+    context: "Typically called by content creators or admins aiming to track the training's storyline efficacy and adapt it if learners show reduced engagement or confusion."

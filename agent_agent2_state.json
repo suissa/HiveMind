@@ -1,0 +1,18 @@
+{
+  "ID": "agent2",
+  "Name": "Engenheiro de Software",
+  "Description": "Agente especializado em desenvolvimento de software",
+  "MaxRounds": 5,
+  "CurrentRound": 1,
+  "TrainingHistory": [
+    {
+      "StartTime": "2025-03-08T01:59:07.449535878-03:00",
+      "EndTime": "2025-03-08T01:59:09.449460725-03:00",
+      "Accuracy": 0.8,
+      "Loss": 0.19999999999999996,
+      "RoundsExecuted": 1,
+      "Errors": null
+    }
+  ],
+  "State": {}
+}
