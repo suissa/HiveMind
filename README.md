@@ -39,27 +39,27 @@ Antes de escolher o banco de dados, precisamos entender quais tipos de memória 
 
 Memória de Curto Prazo (Contextual) - Redis
 
-🔹 Dados temporários usados durante a execução de tarefas
-🔹 Contexto da conversa/interação
-🔹 Melhor armazenado em bancos NoSQL rápidos (ex: Redis, KeyDB, DragonflyDB)
+- Dados temporários usados durante a execução de tarefas
+- Contexto da conversa/interação
+- Melhor armazenado em bancos NoSQL rápidos (ex: Redis, KeyDB, DragonflyDB)
 
 Memória de Longo Prazo (Persistente) - MongoDB
 
-🔹 Registros de interações passadas
-🔹 Histórico de aprendizado e evolução do agente
-🔹 Pode ser armazenado em bancos relacionais ou documentais (ex: PostgreSQL, MongoDB, TimescaleDB)
+- Registros de interações passadas
+- Histórico de aprendizado e evolução do agente
+- Pode ser armazenado em bancos relacionais ou documentais (ex: PostgreSQL, MongoDB, TimescaleDB)
 
 Memória Semântica (Recuperação de Conhecimento) - Weaviate
 
-🔹 Armazena embeddings para busca semântica
-🔹 Permite recuperação eficiente de informações relevantes
-🔹 Melhor armazenado em bancos vetoriais (ex: Weaviate, Pinecone, ChromaDB, FAISS, Milvus)
+- Armazena embeddings para busca semântica
+- Permite recuperação eficiente de informações relevantes
+- Melhor armazenado em bancos vetoriais (ex: Weaviate, Pinecone, ChromaDB, FAISS, Milvus)
 
 Memória de Eventos - TimeScaleDB
 
-🔹 Captura eventos de execução dos agentes (event sourcing)
-🔹 Permite reprocessamento e análise de comportamento
-🔹 Melhor armazenado em bancos de eventos/Time-Series (ex: TimescaleDB, Druid, InfluxDB, ClickHouse)
+- Captura eventos de execução dos agentes (event sourcing)
+- Permite reprocessamento e análise de comportamento
+- Melhor armazenado em bancos de eventos/Time-Series (ex: TimescaleDB, Druid, InfluxDB, ClickHouse)
 
 
 ## 🛠️ Ferramentas Disponíveis
