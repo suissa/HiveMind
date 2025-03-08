@@ -8,24 +8,32 @@ O HiveMind Forge veio para redefinir o padrão dos agentes de Inteligência Arti
 ## 🏗️ O Que Torna o HiveMind Forge Único?
 
 ### 🟢 Alta Escalabilidade: Expansão Sem Limites
+
 Diferente dos sistemas tradicionais de agentes, o HiveMind Forge não tem um único ponto de falha. Ele permite a orquestração de milhares de agentes de IA distribuídos globalmente, garantindo que o sistema cresça de forma linear e eficiente.
+
 ✅ Auto-escalabilidade dinâmica com balanceamento adaptativo
 ✅ Distribuição Inteligente de Tarefas entre agentes
 ✅ Suporte nativo a Kubernetes, NATS e Kafka para comunicação distribuída
 
 ### 🔄 Resiliência: Quando Você Nunca Cai
+
 O HiveMind Forge foi projetado para se manter ativo independentemente das falhas. Se um agente cai, outro assume sua função em milissegundos.
+
 ✅ Failover automático com redistribuição instantânea de tarefas
 ✅ Mecanismos de fallback e reprocessamento inteligente
 ✅ Armazenamento de eventos para consistência eventual
+✅ CircuitBreaker
 
 ### ⚡ Processamento Ultrarrápido
+
 Cada milissegundo importa. O HiveMind Forge usa técnicas de otimização paralela, indexação de memória e inferência distribuída para processar informações com extrema rapidez.
+
 ✅ Pipeline de execução assíncrono e paralelizado
-✅ Armazenamento e recuperação otimizados com TimeSeries DB (TimescaleDB, Druid, Redis)
+✅ Armazenamento e recuperação otimizados com TimeSeries DB utilizando o TimeScale
 ✅ Pronto para inferência acelerada com CUDA, ONNX e TPU
 
-## 🏗️ Tipos de Memória em um Enxame de Agentes
+## 🏗️ Tipos de Memória implementadas
+
 Antes de escolher o banco de dados, precisamos entender quais tipos de memória os agentes podem precisar:
 
 Memória de Curto Prazo (Contextual) - Redis
@@ -52,15 +60,6 @@ Memória de Eventos - TimeScaleDB
 🔹 Permite reprocessamento e análise de comportamento
 🔹 Melhor armazenado em bancos de eventos/Time-Series (ex: TimescaleDB, Druid, InfluxDB, ClickHouse)
 
-
-### 🔥 Melhorias Planejadas para Próximas Versões
-🔹 HiveMind Cognitive Orchestrator - Um agente de decisão contextual que ajusta estratégias de execução em tempo real.
-🔹 Redes Neurais Auto-Organizáveis - IA que aprende a redistribuir carga automaticamente.
-🔹 Adaptive Agent Prioritization - Algoritmo que prioriza tarefas dinamicamente com base no custo computacional.
-🔹 Live Debugging & Observability - Ferramentas avançadas de monitoramento de agentes e pipelines de decisão.
-🔹 Camada de Segurança Zero-Trust - Autenticação descentralizada e criptografia ponta a ponta para comunicação entre agentes.
-
-O HiveMind Forge não é apenas um framework. É um novo paradigma para sistemas de IA distribuídos, onde falha não é uma opção e lentidão não é tolerada. Se você está pronto para construir agentes autônomos hiperinteligentes, que trabalham juntos em uma rede indestrutível, este é o futuro. Bem-vindo à nova era da IA distribuída. 🚀
 
 ## 🛠️ Ferramentas Disponíveis
 
@@ -149,3 +148,15 @@ O HiveMind Forge oferece um conjunto robusto de ferramentas para diferentes nece
   - Arquivos: `tavly.go`
 
 Cada ferramenta foi projetada para integrar-se perfeitamente ao ecossistema do HiveMind Forge, mantendo os mesmos padrões de resiliência, escalabilidade e performance que caracterizam nossa plataforma. Todas as ferramentas incluem interfaces bem definidas, exemplos de implementação e documentação detalhada para facilitar a integração e extensão.
+
+
+
+### 🔥 Melhorias Planejadas para Próximas Versões
+
+🔹 HiveMind Cognitive Orchestrator - Um agente de decisão contextual que ajusta estratégias de execução em tempo real.
+🔹 Redes Neurais Auto-Organizáveis - IA que aprende a redistribuir carga automaticamente.
+🔹 Adaptive Agent Prioritization - Algoritmo que prioriza tarefas dinamicamente com base no custo computacional.
+🔹 Live Debugging & Observability - Ferramentas avançadas de monitoramento de agentes e pipelines de decisão.
+🔹 Camada de Segurança Zero-Trust - Autenticação descentralizada e criptografia ponta a ponta para comunicação entre agentes.
+
+O HiveMind Forge não é apenas um framework. É um novo paradigma para sistemas de IA distribuídos, onde falha não é uma opção e lentidão não é tolerada. Se você está pronto para construir agentes autônomos hiperinteligentes, que trabalham juntos em uma rede indestrutível, este é o futuro. Bem-vindo à nova era da IA distribuída. 🚀
