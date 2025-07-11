@@ -1,4 +1,4 @@
-![HiveMind Forge](https://i.imgur.com/niwPiiL.png)
+![HiveMind Forge]([https://i.imgur.com/niwPiiL.png](https://i.imgur.com/GCsri2e.jpeg))
 
 ## 🚀 HiveMind Forge: The Revolution in AI Agent Coordination
 
