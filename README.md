@@ -1,4 +1,4 @@
-![HiveMind](https://i.imgur.com/OYMSMLA.jpeg)
+![HiveMind](https://i.imgur.com/wr5QaXM.jpeg)
 
 ## 🚀 HiveMind: The Revolution in AI Agent Coordination
 
